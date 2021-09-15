@@ -6,7 +6,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: v0.0.20
-    created: "2021-09-15T14:21:54.718322+02:00"
+    created: "2021-09-15T14:37:14.488937+02:00"
     description: Rancher Local Path Provisioner Storage for Kubernetes-based IMS
     digest: f947c6271c996921be133121e14de52845e54932af24bb544fa9f7bec3ff3a6d
     home: https://github.com/rancher/local-path-provisioner
@@ -33,7 +33,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: "5.7"
-    created: "2021-09-15T14:21:54.719972+02:00"
+    created: "2021-09-15T14:37:14.491122+02:00"
     description: MySQL cluster with ProxySQL for Kubernetes clusters
     digest: 99d747bdd7bc87a4d085d61bec10418a6ac90a44b5a37d23f65cbdf516fa5aa3
     keywords:
@@ -50,4 +50,15 @@ entries:
     urls:
     - mysql-0.1.0.tgz
     version: 0.1.0
-generated: "2021-09-15T14:21:54.71532+02:00"
+  test:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-15T14:37:14.492131+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 31e245e258c4d0c32eee9d3c89c718a11e003adc2cc2e1c5ba29c2475a3ec544
+    name: test
+    type: application
+    urls:
+    - test-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-09-15T14:37:14.487687+02:00"
