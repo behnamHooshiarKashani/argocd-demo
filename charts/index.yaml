@@ -6,16 +6,15 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: v0.0.20
-    created: "2021-09-15T14:16:24.261831+02:00"
+    created: "2021-09-15T14:21:54.718322+02:00"
     description: Rancher Local Path Provisioner Storage for Kubernetes-based IMS
-    digest: 52ac2fcdd87c2762be3fc49cddfe519a59d37c80c5a77c372323dbe8410aa04c
+    digest: f947c6271c996921be133121e14de52845e54932af24bb544fa9f7bec3ff3a6d
     home: https://github.com/rancher/local-path-provisioner
     keywords:
     - rancher
     - storage
     - local_path
     - local_path_provisioner
-    kubeVersion: '>= 1.19.0 < 1.20.0'
     maintainers:
     - email: behnam@ng-voice.com
       name: Behnam Hooshiarkashani
@@ -34,9 +33,9 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: "5.7"
-    created: "2021-09-15T14:16:24.263922+02:00"
+    created: "2021-09-15T14:21:54.719972+02:00"
     description: MySQL cluster with ProxySQL for Kubernetes clusters
-    digest: feaef2a85697d71d440689c4e171fb1d15cf480852067fdfe45ba21761744c23
+    digest: 99d747bdd7bc87a4d085d61bec10418a6ac90a44b5a37d23f65cbdf516fa5aa3
     keywords:
     - mysql
     - mysql-cluster
@@ -51,4 +50,4 @@ entries:
     urls:
     - mysql-0.1.0.tgz
     version: 0.1.0
-generated: "2021-09-15T14:16:24.260063+02:00"
+generated: "2021-09-15T14:21:54.71532+02:00"
