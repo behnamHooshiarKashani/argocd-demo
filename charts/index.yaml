@@ -1,20 +1,114 @@
 apiVersion: v1
 entries:
+  b2bua:
+  - apiVersion: v2
+    appVersion: 0.1.0-dev.5
+    created: "2021-09-16T15:27:25.39587+02:00"
+    description: A Helm chart to deploy Back 2 Back User Agent (B2BUA)
+    digest: 755760e60bb4b9c4f892deeb951fd3c4ca09827ae0f4f8c5b4cf2cdbe989a81e
+    keywords:
+    - b2bua
+    - ims-b2bua
+    - opensips
+    kubeVersion: '>= 1.19.0 < 1.20.0'
+    maintainers:
+    - email: zeeshan@ng-voice.com
+      name: Muhammad Zeeshan
+    name: b2bua
+    type: application
+    urls:
+    - b2bua-0.1.0.tgz
+    version: 0.1.0
+  cscf-configuration-controller:
+  - annotations:
+      app: cscf-configuration-controller
+      category: controllers
+    apiVersion: v2
+    appVersion: 1.1.16
+    created: "2021-09-16T15:27:25.396461+02:00"
+    description: CSCF Configuration Controller for Kubernetes-based IMS
+    digest: c970aef651311074cc12a19941fe6a837a626812b95627ea55c926af43a3a9f6
+    keywords:
+    - cscf
+    - cscf_configuration_controller
+    - cscf_configuration_operator
+    kubeVersion: '>= 1.19.0 < 1.20.0'
+    maintainers:
+    - email: behnam@ng-voice.com
+      name: Behnam Hooshiarkashani
+    - email: muneeb@ng-voice.com
+      name: Muneeb Ahmad
+    name: cscf-configuration-controller
+    type: application
+    urls:
+    - cscf-configuration-controller-0.1.0.tgz
+    version: 0.1.0
+  cscf-controller:
+  - annotations:
+      app: cscf_controller
+      category: controller
+    apiVersion: v2
+    appVersion: 1.1.0-dev
+    created: "2021-09-16T15:27:25.398655+02:00"
+    description: CSCF Controller for Kubernetes-based IMS
+    digest: cacc3f84cd5e77f079e6b4af44aad863e671c84e3210290cc7c24b94051c769b
+    keywords:
+    - cscf
+    - cscf_controller
+    - cscf_operator
+    kubeVersion: '>= 1.19.0 < 1.20.0'
+    maintainers:
+    - email: behnam@ng-voice.com
+      name: Behnam Hooshiarkashani
+    - email: muneeb@ng-voice.com
+      name: Muneeb Ahmad
+    name: cscf-controller
+    type: application
+    urls:
+    - cscf-controller-0.1.0.tgz
+    version: 0.1.0
+  icscf:
+  - annotations:
+      app: icscf
+      category: ims
+    apiVersion: v2
+    appVersion: 0.1.0-dev.5
+    created: "2021-09-16T15:27:25.399319+02:00"
+    description: A Helm Chart for Kubernetes-based I-CSCF
+    digest: 7cd22e37b265beb9bba5d5bfe141f010d1e41ebb8bc1ddc88f296cf076d6380b
+    home: https://bitbucket.org/ngvoice/helm-charts
+    icon: https://www.ng-voice.com/wp-content/uploads/2021/04/ng-voice-logo.svg
+    keywords:
+    - ims
+    - icscf
+    - kamailio
+    kubeVersion: '>= 1.19.0'
+    maintainers:
+    - email: muneeb@ng-voice.com
+      name: Muneeb Ahmad
+    name: icscf
+    sources:
+    - https://bitbucket.org/ngvoice/kamailio_ims
+    type: application
+    urls:
+    - icscf-0.1.0.tgz
+    version: 0.1.0
   local-path-provisioner:
   - annotations:
       app: local-path-provisioner
       category: Infrastructure
     apiVersion: v2
     appVersion: v0.0.20
-    created: "2021-09-15T14:37:14.488937+02:00"
+    created: "2021-09-16T15:27:25.399701+02:00"
     description: Rancher Local Path Provisioner Storage for Kubernetes-based IMS
-    digest: f947c6271c996921be133121e14de52845e54932af24bb544fa9f7bec3ff3a6d
+    digest: ec701e3f41ef3a7d6a7dfd31c0d5eec87e635af0dd9a307aadf53730d68a4606
     home: https://github.com/rancher/local-path-provisioner
     keywords:
     - rancher
     - storage
     - local_path
     - local_path_provisioner
+    kubeVersion: '>= 1.19.0 < 1.20.0'
     maintainers:
     - email: behnam@ng-voice.com
       name: Behnam Hooshiarkashani
@@ -33,13 +127,14 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: "5.7"
-    created: "2021-09-15T14:37:14.491122+02:00"
+    created: "2021-09-16T15:27:25.40031+02:00"
     description: MySQL cluster with ProxySQL for Kubernetes clusters
-    digest: 99d747bdd7bc87a4d085d61bec10418a6ac90a44b5a37d23f65cbdf516fa5aa3
+    digest: 9be78b81cb246ebea3de6843c97a65e7c9dd66dfd7948b94f8078df03be281ee
     keywords:
     - mysql
     - mysql-cluster
     - proxysql
+    kubeVersion: '>= 1.19.0 < 1.20.0'
     maintainers:
     - email: behnam@ng-voice.com
       name: Behnam Hooshiarkashani
@@ -50,15 +145,51 @@ entries:
     urls:
     - mysql-0.1.0.tgz
     version: 0.1.0
+  scscf:
+  - apiVersion: v2
+    appVersion: 0.1.0-dev.5
+    created: "2021-09-16T15:27:25.40187+02:00"
+    description: A Helm chart to deploy Serving Call Session Control Function (S-CSCF)
+    digest: 4f793ace49000d5a0842c3ecc1e6d3c202e0f5c742745d35562ec01a20703a2b
+    keywords:
+    - scscf
+    - ims-scscf
+    kubeVersion: '>= 1.19.0 < 1.20.0'
+    maintainers:
+    - email: zeeshan@ng-voice.com
+      name: Muhammad Zeeshan
+    name: scscf
+    type: application
+    urls:
+    - scscf-0.1.0.tgz
+    version: 0.1.0
+  srvcc:
+  - apiVersion: v2
+    appVersion: 0.1.0-dev.4
+    created: "2021-09-16T15:27:25.402496+02:00"
+    description: A Helm chart to deploy Single Radio Voice Call Continuity (SRVCC)
+    digest: aa21900d7d36d39ef92ff32df28090f1e84b6af106d38ff5baa2a7a58aa0b0e2
+    keywords:
+    - srvcc
+    - ims-srvcc
+    kubeVersion: '>= 1.19.0 < 1.20.0'
+    maintainers:
+    - email: zeeshan@ng-voice.com
+      name: Muhammad Zeeshan
+    name: srvcc
+    type: application
+    urls:
+    - srvcc-0.1.0.tgz
+    version: 0.1.0
   test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-09-15T14:37:14.492131+02:00"
+    created: "2021-09-16T15:27:25.40389+02:00"
     description: A Helm chart for Kubernetes
-    digest: 31e245e258c4d0c32eee9d3c89c718a11e003adc2cc2e1c5ba29c2475a3ec544
+    digest: a75e72d790ddf14810113dd8c8b82dbb2bdc15a4f585c84e07304cd694630987
     name: test
     type: application
     urls:
     - test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-09-15T14:37:14.487687+02:00"
+generated: "2021-09-16T15:27:25.395065+02:00"

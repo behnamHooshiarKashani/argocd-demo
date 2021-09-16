@@ -7,3 +7,6 @@ do
         echo "$chart"
         helm package $sourcePath$chart -d $destPath
 done
+
+helm repo index charts
+git add charts
