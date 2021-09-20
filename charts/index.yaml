@@ -3,9 +3,9 @@ entries:
   b2bua:
   - apiVersion: v2
     appVersion: 0.1.0-dev.5
-    created: "2021-09-20T16:54:39.199181+02:00"
+    created: "2021-09-20T17:11:03.67039+02:00"
     description: A Helm chart to deploy Back 2 Back User Agent (B2BUA)
-    digest: 0aa8f49a2341a54dc83445fac79f462f967d14d9a52fad42be53081d597d42a3
+    digest: 223d0afede4c387d5b29e527541c56fedbdf4bfb2478bdf06a9f0bbe0176ad54
     keywords:
     - b2bua
     - ims-b2bua
@@ -25,9 +25,9 @@ entries:
       category: controllers
     apiVersion: v2
     appVersion: 1.1.16
-    created: "2021-09-20T16:54:39.20007+02:00"
+    created: "2021-09-20T17:11:03.670989+02:00"
     description: CSCF Configuration Controller for Kubernetes-based IMS
-    digest: 647beb5e569ba3bfe0b3ed7fc3fd5e5e8db0a09ee08bb4b6d404957b14d30f2f
+    digest: bde97585859b2d47de2d68344ebbce784eaec0d5464a6ee7ba6a24b52dcf9501
     keywords:
     - cscf
     - cscf_configuration_controller
@@ -49,9 +49,9 @@ entries:
       category: controller
     apiVersion: v2
     appVersion: 1.1.0-dev
-    created: "2021-09-20T16:54:39.202776+02:00"
+    created: "2021-09-20T17:11:03.673828+02:00"
     description: CSCF Controller for Kubernetes-based IMS
-    digest: 1d31a32557920f9bde6e35184b70e6e0a7120b5989e3342ff431bdab8ead8b89
+    digest: 8ce40516d939c8a11b6b2c83840badeec7201d237d02193f7bc2ce41dca80507
     keywords:
     - cscf
     - cscf_controller
@@ -73,9 +73,9 @@ entries:
       category: ims
     apiVersion: v2
     appVersion: 0.1.0-dev.5
-    created: "2021-09-20T16:54:39.203673+02:00"
+    created: "2021-09-20T17:11:03.675079+02:00"
     description: A Helm Chart for Kubernetes-based I-CSCF
-    digest: 6ef126314294a1a69f71bcd1359abf4c16e4899510daccb73e7ed5c0bf176ea4
+    digest: 5501494d494c12eb5ef9e7888ad388a03b9981a508bbc83871736fe0ad939071
     home: https://bitbucket.org/ngvoice/helm-charts
     icon: https://www.ng-voice.com/wp-content/uploads/2021/04/ng-voice-logo.svg
     keywords:
@@ -99,9 +99,9 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: v0.0.20
-    created: "2021-09-20T16:54:39.204118+02:00"
+    created: "2021-09-20T17:11:03.675671+02:00"
     description: Rancher Local Path Provisioner Storage for Kubernetes-based IMS
-    digest: b9396291fb58ba99d74bf0de7e4f7135103bf73fada2ea161cdd6f66944a0f09
+    digest: 875b121ef9edddb816c70a4d1e5947d4d954928898ed877e0689b8c20d318e80
     home: https://github.com/rancher/local-path-provisioner
     keywords:
     - rancher
@@ -127,9 +127,9 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: "5.7"
-    created: "2021-09-20T16:54:39.205221+02:00"
+    created: "2021-09-20T17:11:03.677151+02:00"
     description: MySQL cluster with ProxySQL for Kubernetes clusters
-    digest: 210fab8aa75a12ecfb0e16378837ade74feefb4afc922cdf68fa095b36c0f4d4
+    digest: 85ba723e22c3e22866eb9e9f70bbc5cd9edca1adb231a19b9277835f4a432c00
     keywords:
     - mysql
     - mysql-cluster
@@ -151,7 +151,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 4.5.0
-    created: "2021-09-20T16:54:39.210222+02:00"
+    created: "2021-09-20T17:11:03.682554+02:00"
     dependencies:
     - name: powerdns-server
       repository: file://../powerdns-server
@@ -159,7 +159,7 @@ entries:
       - powerdns-server
       version: 0.1.0
     description: PowerDNS Recursor for Kubernetes-based IMS
-    digest: 62821b8f08c438b4d127bf24ed19414b350190b8d560576be115c9d92171481c
+    digest: 5b5d7dc13963631e7091c3d8ef818be5d09ab2181b2a11cf0144032019505c7c
     keywords:
     - pdns
     - powerdns
@@ -173,12 +173,40 @@ entries:
     urls:
     - powerdns-recursor-0.1.0.tgz
     version: 0.1.0
+  powerdns-server:
+  - annotations:
+      app: powerdns-server
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 4.5.0
+    created: "2021-09-20T17:11:03.686459+02:00"
+    dependencies:
+    - name: mysql
+      repository: file://../mysql
+      tags:
+      - mysql
+      version: 0.1.0
+    description: PowerDNS Server for Kubernetes-based IMS
+    digest: a834a0d4250b3009e2d76a3b20e452f19a877d03ac314b2343d2f42a67ae7da9
+    keywords:
+    - pdns
+    - powerdns
+    - powerdns_server
+    kubeVersion: '>= 1.19.0 < 1.20.0'
+    maintainers:
+    - email: muneeb@ng-voice.com
+      name: Muneeb Ahmad
+    name: powerdns-server
+    type: application
+    urls:
+    - powerdns-server-0.1.0.tgz
+    version: 0.1.0
   scscf:
   - apiVersion: v2
     appVersion: 0.1.0-dev.5
-    created: "2021-09-20T16:54:39.211276+02:00"
+    created: "2021-09-20T17:11:03.688073+02:00"
     description: A Helm chart to deploy Serving Call Session Control Function (S-CSCF)
-    digest: 39bf7b9fc8ca022c3b7500dc6b08c40ebabb893e8f815f8fe6503751a61576eb
+    digest: 796c03a6f43fbe06c41eb38e1f1777825b86b1553b759b1bd260b1af5bcd03ed
     keywords:
     - scscf
     - ims-scscf
@@ -194,9 +222,9 @@ entries:
   srvcc:
   - apiVersion: v2
     appVersion: 0.1.0-dev.4
-    created: "2021-09-20T16:54:39.212047+02:00"
+    created: "2021-09-20T17:11:03.688716+02:00"
     description: A Helm chart to deploy Single Radio Voice Call Continuity (SRVCC)
-    digest: 729fb0e29dc950393f4770d947a420432d7033e4d988e1733fb656e458ecfcd2
+    digest: 69f04bbca707c1eda149fa52077e9f0274de799afe8f7f4e01914ccf580e413e
     keywords:
     - srvcc
     - ims-srvcc
@@ -212,9 +240,9 @@ entries:
   test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-09-20T16:54:39.212701+02:00"
+    created: "2021-09-20T17:11:03.689599+02:00"
     description: A Helm chart for Kubernetes
-    digest: 8baf819482087f49c912d41069b457afffbc14a45e8a902c3085663e9126dc23
+    digest: 5535730a623a21f151594475783a81b8594e1b64c311e243b5491a65ba59ca9b
     name: test
     type: application
     urls:
@@ -226,9 +254,9 @@ entries:
       category: network
     apiVersion: v2
     appVersion: master
-    created: "2021-09-20T16:54:39.213345+02:00"
+    created: "2021-09-20T17:11:03.690364+02:00"
     description: A Helm chart for Whereabouts CNI Plugin
-    digest: 6bbe40c74bd42635ee672560fcad3a27738b8232930c2e6f657194db48e517fb
+    digest: 522cd20c53100a294c683adeae11b796f8d85f3608194ae9ed79baf11915562c
     home: https://github.com/k8snetworkplumbingwg/whereabouts
     icon: https://github.com/k8snetworkplumbingwg/whereabouts/blob/master/doc/logo.png
     keywords:
@@ -244,4 +272,4 @@ entries:
     urls:
     - whereabouts-0.1.0.tgz
     version: 0.1.0
-generated: "2021-09-20T16:54:39.198034+02:00"
+generated: "2021-09-20T17:11:03.668893+02:00"
