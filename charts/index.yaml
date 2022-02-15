@@ -73,29 +73,7 @@ entries:
     urls:
     - cscf-controller-1.0.0-dev.4.tgz
     version: 1.0.0-dev.4
-  - annotations:
-      app: cscf_controller
-      category: controller
-    apiVersion: v2
-    appVersion: 1.1.0-dev
-    created: "2022-02-15T15:02:36.957672+01:00"
-    description: CSCF Controller for Kubernetes-based IMS
-    digest: 04b2cea0212125cf853b23557a22d9d43659558e3a93859f653c422b937d25d5
-    keywords:
-    - cscf
-    - cscf_controller
-    - cscf_operator
-    kubeVersion: '>= 1.19.0 < 1.20.0'
-    maintainers:
-    - email: behnam@ng-voice.com
-      name: Behnam Hooshiarkashani
-    - email: muneeb@ng-voice.com
-      name: Muneeb Ahmad
-    name: cscf-controller
-    type: application
-    urls:
-    - cscf-controller-0.1.0.tgz
-    version: 0.1.0
+
   icscf:
   - annotations:
       app: icscf
