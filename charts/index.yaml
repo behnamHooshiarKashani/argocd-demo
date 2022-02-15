@@ -3,7 +3,7 @@ entries:
   b2bua:
   - apiVersion: v2
     appVersion: 0.1.0-dev.5
-    created: "2021-09-20T17:18:44.682699+02:00"
+    created: "2022-02-15T15:02:36.951998+01:00"
     description: A Helm chart to deploy Back 2 Back User Agent (B2BUA)
     digest: 82823fbab97b8f0d589984e5e6daede86ec645d5e2644552f926b74ab0c4882c
     keywords:
@@ -25,7 +25,7 @@ entries:
       category: controllers
     apiVersion: v2
     appVersion: 1.1.16
-    created: "2021-09-20T17:18:44.683152+02:00"
+    created: "2022-02-15T15:02:36.952648+01:00"
     description: CSCF Configuration Controller for Kubernetes-based IMS
     digest: 882eb3de2a9de8f7b0807a21839e2da379f293ffe4827255599d8375b85fdb50
     keywords:
@@ -49,7 +49,36 @@ entries:
       category: controller
     apiVersion: v2
     appVersion: 1.1.0-dev
-    created: "2021-09-20T17:18:44.685911+02:00"
+    created: "2022-02-15T15:02:36.962553+01:00"
+    description: CSCF Controller for Kubernetes-based IMS
+    digest: 3f3344267da872565edd52812a9b2087136b53df9e3b45e09e70678766fd187d
+    home: https://bitbucket.org/ngvoice/helm-charts
+    icon: https://www.ng-voice.com/wp-content/uploads/2021/04/ng-voice-logo.svg
+    keywords:
+    - cscf
+    - cscf_controller
+    - cscf_operator
+    kubeVersion: '>= 1.19.0 < 1.22.0'
+    maintainers:
+    - email: zeeshan@ng-voice.com
+      name: Muhammad Zeeshan
+    - email: behnam@ng-voice.com
+      name: Behnam Hooshiarkashani
+    - email: muneeb@ng-voice.com
+      name: Muneeb Ahmad
+    name: cscf-controller
+    sources:
+    - https://bitbucket.org/ngvoice/cscf-controller
+    type: application
+    urls:
+    - cscf-controller-1.0.0-dev.4.tgz
+    version: 1.0.0-dev.4
+  - annotations:
+      app: cscf_controller
+      category: controller
+    apiVersion: v2
+    appVersion: 1.1.0-dev
+    created: "2022-02-15T15:02:36.957672+01:00"
     description: CSCF Controller for Kubernetes-based IMS
     digest: 04b2cea0212125cf853b23557a22d9d43659558e3a93859f653c422b937d25d5
     keywords:
@@ -67,36 +96,13 @@ entries:
     urls:
     - cscf-controller-0.1.0.tgz
     version: 0.1.0
-  - annotations:
-      app: cscf_controller
-      category: controller
-    apiVersion: v2
-    appVersion: 1.1.0-dev
-    created: "2021-09-20T17:18:44.685911+02:00"
-    description: CSCF Controller for Kubernetes-based IMS
-    digest: 04b2cea0212125cf853b23557a22d9d43659558e3a93859f653c422b937d25d5
-    keywords:
-      - cscf
-      - cscf_controller
-      - cscf_operator
-    kubeVersion: '>= 1.19.0 < 1.20.0'
-    maintainers:
-      - email: behnam@ng-voice.com
-        name: Behnam Hooshiarkashani
-      - email: muneeb@ng-voice.com
-        name: Muneeb Ahmad
-    name: cscf-controller
-    type: application
-    urls:
-      - cscf-controller-1.0.0-dev.4.tgz
-    version: 1.0.0-dev.4
   icscf:
   - annotations:
       app: icscf
       category: ims
     apiVersion: v2
     appVersion: 0.1.0-dev.5
-    created: "2021-09-20T17:18:44.686678+02:00"
+    created: "2022-02-15T15:02:36.964097+01:00"
     description: A Helm Chart for Kubernetes-based I-CSCF
     digest: faa961dc31b55c915ee65425c2164e7bc95b3d8a0e26093b3fcc9ffe679fb5d3
     home: https://bitbucket.org/ngvoice/helm-charts
@@ -122,7 +128,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: v0.0.20
-    created: "2021-09-20T17:18:44.687145+02:00"
+    created: "2022-02-15T15:02:36.964737+01:00"
     description: Rancher Local Path Provisioner Storage for Kubernetes-based IMS
     digest: e6c6a2deb6bdb557fb4ca842137136354161a9c0adf7fb94cf00c42ff5e93e11
     home: https://github.com/rancher/local-path-provisioner
@@ -150,7 +156,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: "5.7"
-    created: "2021-09-20T17:18:44.688164+02:00"
+    created: "2022-02-15T15:02:36.965787+01:00"
     description: MySQL cluster with ProxySQL for Kubernetes clusters
     digest: 32c97cf357bbf29161ca2d44f79e2e68dec8ea25950b7884f3b28c0da89d55a5
     keywords:
@@ -174,7 +180,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 4.5.0
-    created: "2021-09-20T17:18:44.69233+02:00"
+    created: "2022-02-15T15:02:36.96937+01:00"
     dependencies:
     - name: powerdns-server
       repository: file://../powerdns-server
@@ -202,7 +208,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 4.5.0
-    created: "2021-09-20T17:18:44.693877+02:00"
+    created: "2022-02-15T15:02:36.971104+01:00"
     dependencies:
     - name: mysql
       repository: file://../mysql
@@ -227,7 +233,7 @@ entries:
   scscf:
   - apiVersion: v2
     appVersion: 0.1.0-dev.5
-    created: "2021-09-20T17:18:44.695293+02:00"
+    created: "2022-02-15T15:02:36.972535+01:00"
     description: A Helm chart to deploy Serving Call Session Control Function (S-CSCF)
     digest: 6866d7c89359b6354537366481abf62b8852a30e38f1798e00b9c5664fea663e
     keywords:
@@ -245,7 +251,7 @@ entries:
   srvcc:
   - apiVersion: v2
     appVersion: 0.1.0-dev.4
-    created: "2021-09-20T17:18:44.696093+02:00"
+    created: "2022-02-15T15:02:36.973515+01:00"
     description: A Helm chart to deploy Single Radio Voice Call Continuity (SRVCC)
     digest: 060ae913b2811eb791deb5908e71369dfc559942e46d17af55916b83daaf3fa4
     keywords:
@@ -263,7 +269,7 @@ entries:
   test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-09-20T17:18:44.696654+02:00"
+    created: "2022-02-15T15:02:36.97418+01:00"
     description: A Helm chart for Kubernetes
     digest: d7192706e1b9788793a9eacc3c60738f0f007d0da43c00c02ad11ec39ae2219f
     name: test
@@ -277,7 +283,7 @@ entries:
       category: network
     apiVersion: v2
     appVersion: master
-    created: "2021-09-20T17:18:44.69731+02:00"
+    created: "2022-02-15T15:02:36.974991+01:00"
     description: A Helm chart for Whereabouts CNI Plugin
     digest: 1a8a6155e47fe140645c89572c67e196025bc8f2f579cfbf5247ba18de44ef60
     home: https://github.com/k8snetworkplumbingwg/whereabouts
@@ -295,4 +301,4 @@ entries:
     urls:
     - whereabouts-0.1.0.tgz
     version: 0.1.0
-generated: "2021-09-20T17:18:44.681681+02:00"
+generated: "2022-02-15T15:02:36.949932+01:00"
